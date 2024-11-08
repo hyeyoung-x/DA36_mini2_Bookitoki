@@ -1,11 +1,39 @@
 import streamlit as st
+from streamlit import columns
 
-# 세로줄이 지원되지 않는다. 마크다운으로 일일이 그어야 하는데, 그건 너무나 한계가 명확하다.
+# 세로줄이 지원되지 않는다. 마크다운으로 일일이 그어야 하는데, 그건 너무나 한계가 명확하
+import streamlit as st
 
-st.markdown(
-    "<h1 style='text-align: center; font-size: 50px;'>Bookitoki</h1>",
-    unsafe_allow_html=True
-)
+# CSS 스타일 정의
+st.markdown("""
+    <style>
+    .container {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+    .logo-img {
+        width: 100px;
+        margin-right: 20px;
+    }
+    .title {
+        font-size: 50px;
+        color: #000000;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+# HTML을 사용하여 로고와 제목을 함께 표시
+st.markdown("""
+    <div class="container">
+        <img class="logo-img" src="data/bookitoki_logo.png">
+        <h1 class="title">Bookitoki</h1>
+    </div>
+    """, unsafe_allow_html=True)
+
+
+
+st.empty()
 st.markdown(
     """
     <style>
@@ -22,7 +50,7 @@ if st.button("내정보"):
 
 st.divider()
 
-st.text_area(st.text('오늘의 책'),)
+st.text('오늘의 책')
 
 st.divider()
 
