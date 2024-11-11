@@ -1,6 +1,6 @@
 # 머신러닝을 활용한 추천 시스템 구현
 
-![대문 이미지](img.png)
+![대문 이미지](soovin/data/img.png)
 
 **프로젝트 이름** : Bookitoki
 
