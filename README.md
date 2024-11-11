@@ -22,7 +22,7 @@
 
 ### **시장 조사**
 
-![img_1.png](img_1.png)
+![img_1.png](soovin/data/img_1.png)
 
 -------
 
@@ -36,14 +36,14 @@
 
 **데이터셋** : https://www.kaggle.com/datasets/ruchi798/bookcrossing-dataset/data
 
-![img_2.png](img_2.png)
-![img_3.png](img_3.png)
-![img_5.png](img_5.png)
+![img_2.png](soovin/data/img_2.png)
+![img_3.png](soovin/data/img_3.png)
+![img_5.png](soovin/data/img_5.png)
 
 -----
 ### **기능 개요**
 
-![img_8.png](img_8.png)
+![img_8.png](soovin/data/img_8.png)
 
 ### **시연 영상**
 
