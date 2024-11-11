@@ -47,7 +47,7 @@
 
 ### **시연 영상**
 
-링크 삽입 구간.
+[링크 삽입 구간.](https://drive.google.com/drive/folders/1sBdYstZMxD3goNaHydNORppfXdNQZNpb)
 
 ### **구현 기능에 따른 부가 설명**
 
