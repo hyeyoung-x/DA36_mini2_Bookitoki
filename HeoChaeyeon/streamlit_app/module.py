@@ -1,23 +1,23 @@
 import pandas as pd
 # preprocessed-data -------------------------------------------------#
-book_filter_df=pd.read_csv('csv/book_filter_df.csv')
+book_filter_df=pd.read_csv('https://drive.google.com/file/d/1gbDsd5R4bkiEVg-71SuCOGOTCbPpmoTS/view?usp=drive_link')
 user_book_df=book_filter_df.pivot_table(index='user_id',columns='book_title',values='rating',fill_value=0)
 user_author_rating_df = book_filter_df.groupby(['user_id', 'book_author'])['rating'].mean().reset_index()
 user_author_rating_df=user_author_rating_df.pivot_table(index="user_id",columns="book_author",values="rating",fill_value=0)
 #--------------------------------------------------------------------------------------------------------#
 # 연령대별 유사도
-ages_similarity_df=pd.read_csv("csv/age_similarity_df.csv",index_col='book_title')
+ages_similarity_df=pd.read_csv("https://drive.google.com/file/d/1xfRONp2R-bKVuX1Fe5744rNsl7qEALmK/view?usp=drive_link",index_col='book_title')
 #--------------------------------------------------------------------------------------------------------#
 # # user의 top category 추천
-top_book_by_category=pd.read_csv("csv/top_book_by_category.csv",index_col=0)
+top_book_by_category=pd.read_csv("https://drive.google.com/file/d/1fBvbmbe78zAfMVthcmw8T_ISaxejl31y/view?usp=drive_link",index_col=0)
 #--------------------------------------------------------------------------------------------------------#
 # # 책 평점별 유사도
-book_similarity_df=pd.read_csv("csv/book_similarity_df.csv",index_col='book_title')
+book_similarity_df=pd.read_csv("https://drive.google.com/file/d/1HbSz-xtR1_PVjg6ZNlfqm47xDbmvIalD/view?usp=drive_link",index_col='book_title')
 book_ratings_pred_df=pd.read_csv("csv/book_ratings_pred_df.csv",index_col='user_id')
 #--------------------------------------------------------------------------------------------------------#
 # # 작가 평점별 유사도
-author_similarity_df=pd.read_csv("csv/autho         r_similarity_df.csv",index_col='book_author')
-author_ratings_pred_df=pd.read_csv("csv/author_ratings_pred_df.csv",index_col='user_id')
+author_similarity_df=pd.read_csv("https://drive.google.com/file/d/15rteykKLX6Lu8O31wmQVKJp9HKEQ67UV/view?usp=drive_link",index_col='book_author')
+author_ratings_pred_df=pd.read_csv("https://drive.google.com/file/d/1vq37-PHSlyjCnq68WmdjAagc8-VerYVb/view?usp=drive_link",index_col='user_id')
 #--------------------------------------------------------------------------------------------------------#
 # streamlit 시각화 자료
 def match_L_Category(title):
